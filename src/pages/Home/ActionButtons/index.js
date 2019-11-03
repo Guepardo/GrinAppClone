@@ -1,5 +1,6 @@
 import React from 'react';
 import Icon from 'react-native-vector-icons/MaterialCommunityIcons'
+import { withNavigation } from 'react-navigation'
 
 import {
   Container,
@@ -11,12 +12,18 @@ import {
 
 import RoundedButton from './../../../components/RoundedButton'
 
+function ActionButtons({ navigation }) {
+  function onOpenMenu() {
+    navigation.toggleDrawer()
+  }
 
-export default function ActionButtons() {
   return (
     <Container>
       <LateralButtonContainer>
-        <RoundedButton name={'menu'} />
+        <RoundedButton
+          name={'menu'}
+          onPress={onOpenMenu}
+        />
       </LateralButtonContainer>
       <CenterButtonContainer>
         <ScannerButtonContainer>
@@ -32,3 +39,5 @@ export default function ActionButtons() {
     </Container>
   );
 }
+
+export default withNavigation(ActionButtons)

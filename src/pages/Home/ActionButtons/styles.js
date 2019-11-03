@@ -19,6 +19,7 @@ export const ScannerButtonContainer = styled.TouchableOpacity`
 export const ScannerButtonLabel = styled.Text`
   font-size: 15px;
   color: white;
+  font-weight: bold;
   margin-left: 10px;
 `
 

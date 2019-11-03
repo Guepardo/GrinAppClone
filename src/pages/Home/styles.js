@@ -33,5 +33,4 @@ export const AddBalanceLabel = styled.Text`
 
 export const MapContainer = styled.View`
   flex: 1;
-  background-color: gray;
 `
