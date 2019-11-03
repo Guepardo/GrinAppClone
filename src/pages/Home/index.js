@@ -1,5 +1,7 @@
 import React from 'react';
 
+import MapView from 'react-native-maps';
+
 import {
   Container,
   DisplayBalanceContainer,
@@ -22,7 +24,9 @@ export default function Home() {
       <AddBalanceContainer>
         <AddBalanceLabel>Adicionar saldo</AddBalanceLabel>
       </AddBalanceContainer>
-      <MapContainer />
+      <MapContainer>
+        <MapView />
+      </MapContainer>
       <ActionButtons/>
     </Container>
   );
