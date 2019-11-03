@@ -8,6 +8,7 @@ export default function RoundedButton({name, onPress}) {
     <Container onPress={onPress} >
       <Icon
         name={name}
+        size={25}
       />
     </Container>
   );

@@ -11,7 +11,15 @@ export const ScannerButtonContainer = styled.TouchableOpacity`
   border-radius: 30px;
   margin: 0 10px;
   background-color: #0ad76e;
-  align-self: stretch
+  align-self: stretch;
+  flex-direction: row;
+  justify-content: center;
+  alignItems: center;
+`
+export const ScannerButtonLabel = styled.Text`
+  font-size: 15px;
+  color: white;
+  margin-left: 10px;
 `
 
 export const LateralButtonContainer = styled.View`
